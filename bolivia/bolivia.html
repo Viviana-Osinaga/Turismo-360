@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/paises.css">
+    <link rel="stylesheet" href="./styles/sideBar.css">
+    <link rel="stylesheet" href="./styles/cards.css">
+    <link rel="icon" type="image/svg" href="./components/logo/logo_draw.svg">
+    <title>Bolivia</title>
+</head>
+<body>
+    <!-- Sidebar-Header -->
+    <header class="sidebar close">
+        <section>
+            <img src="./components/logo/logo_draw.svg" alt="logo de la empresa" id="logo">
+        </section>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-search-alt-2' ></i>
+                    <input type="text" name="Busqueda" id="busqueda" placeholder="Búsqueda">
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Búsqueda</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../index.html">
+                    <i class='bx bxs-home' ></i>
+                    <span class="link_name">Principal</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="../index.html">Principal</a></li>
+                </ul>
+            </li>
+            <li>
+                <section class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-plane-alt'></i>
+                        <span class="link_name">Destinos</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </section>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Destinos</a></li>
+                    <li><a href="../argentina/argentina.html">Argentina</a></li>
+                    <li><a href="bolivia.html">Bolivia</a></li>
+                    <li><a href="../colombia/colombia.html">Colombia</a></li>
+                    <li><a href="../peru/peru.html">Perú</a></li>
+                </ul>
+            </li>
+            <li>
+                <section class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-envelope' ></i>
+                        <span class="link_name">Contacto</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </section>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Contacto</a></li>
+                    <li><a href="#footer">Redes Sociales</a></li>
+                    <li><a href="../index.html#form">Formulario</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </header>
+    <!-- Body -->
+    <!--Mostrar/Ocultar menú-->
+    <main class="home-section">
+        <section>
+            <section class="home-content">
+                <i class='bx bxs-chevrons-left'></i>
+            </section>
+
+            <h1>Bolivia</h1>
+
+            <!--Destinos dentro del pais-->
+
+            <section id="articulos-destino-flex">
+                <article class="articulos">
+                    <a title="Ciudad1" href="#samaipata">
+                        <img src="./components/img_bolivia/JscFuerteSamaipata1.jpg" alt="foto de las ruinas del fuerte de samaipata" class="imagen">
+                        <p class="p-destinos">Samaipata</p>
+                    </a>
+                </article>
+                <article class="articulos">
+                    <a title="Ciudad2" href="#santacruz">
+                        <img src="./components/img_bolivia/santacruzdelasierra.webp" alt="foto de la praza 24 de septiempre" class="imagen">
+                        <p class="p-destinos">Santa Cruz</p>
+                    </a>
+                </article>
+                <article class="articulos">
+                    <a title="Ciudad3" href="#cochabamba">
+                        <img src="./components/img_bolivia/samaipataruinas3.jpg" alt="teleférico de cochabamba" class="imagen">
+                        <p class="p-destinos">Cochabamba</p>
+                    </a>
+                </article>
+            
+            </section>
+            <!--cards ciudades-->
+            <section class="destinos_section">
+                <!-- <h2 class="titulo_ciudades">Ciudades</h2> -->
+                <section class="destinos">     
+                    <article class="article-destinos" id="destinos">
+        
+                        <article id="samaipata">
+                            <section class="slider">
+
+                                <section class="images"> 
+                                    <input type="radio" name="slide" id="img1">
+                                    <input type="radio" name="slide" id="img2">
+                                    <input type="radio" name="slide" id="img3">
+        
+                                    <img src="./components/img_bolivia/samaipataruinas3.jpg" class="m1" alt="foto de las ruinas de samaipata">
+                                    <img src="./components/img_bolivia/fuerte-de-samaipata.jpg" class="m2" alt="foto de las ruinas de samaipata">
+                                    <img src="./components/img_bolivia/samaipataruinas.jpg" class="m3" alt="foto de las ruinas de samaipata">
+                                </section>
+                                <section class="dots">
+                                    <label for="img1"></label>
+                                    <label for="img2"></label>
+                                    <label for="img3"></label>
+                                </section>
+        
+                            </section>
+        
+                            <h3 class="title_card">Samaipata</h3>
+                            <p class="text_card">El Observatorio Astronómico de Samaipata, Centro Cósmico de Samaipata, Centro Astronómico Amazónico o el Centro Ceremonial de Samaipata, conocido comúnmente como el Fuerte de Samaipata, también conocido simplemente como "El Fuerte", es un sitio arqueológico precolombino y preincaico de origen chané de Bolivia, ubicado a pocos kilómetros del pueblo de Samaipata en la provincia Florida, departamento de Santa Cruz, a una altura de 1950 m s. n. m. Fue declarado Patrimonio Cultural de la Humanidad por la Unesco en el año 1998 y es considerada la piedra tallada más grande del mundo.</p>
+                            
+                            <a href="../index.html#form" class="card_cta">Contáctanos</a>
+                        </article>
+        
+                    </article>
+                </section>
+                
+                <section class="destinos">     
+                    <article class="article-destinos" id="destinos">
+        
+                        <article id="santacruz">
+                            <section class="slider">
+                                <section class="images">
+                                    <input type="radio" name="slide" id="img4">
+                                    <input type="radio" name="slide" id="img5">
+                                    <input type="radio" name="slide" id="img6">
+        
+                                    <img src="./components/img_bolivia/santa_cruz_de_la_sierra.webp" class="m4" alt="foto de la ciudad de santa cruz">
+                                    <img src="./components/img_bolivia/santacruzdelasierra.webp" class="m5" alt="imagen de la plaza 24 de septiembre">
+                                    <img src="./components/img_bolivia/Santa-Cruz-plaza.jpg" class="m6" alt="foto de la praza 24 de septiempre">
+                                </section>
+                                <section class="dots">
+                                    <label for="img4"></label>
+                                    <label for="img5"></label>
+                                    <label for="img6"></label>
+                                </section>
+        
+                            </section>
+        
+                            <h3 class="title_card">Santa Cruz de la Sierra</h3>
+                            <p class="text_card">Te invitamos a conocer este hermoso lugar, te vamos a acompañar en todo el viaje. Santa Cruz de la Sierra es una ciudad localizada en los llanos orientales de Bolivia, a orillas del río Piraí. Te proponemos estos lugares para visitar: la histórica Plaza 24 de septiembre en el centro, 7 calles, Barrio lindo, el Parque Urbano y el Cambodromo de Santa Cruz. </p>
+                            
+                            <a href="../index.html#form" class="card_cta">Contáctanos</a>
+                        </article>
+        
+                    </article>
+                </section>
+                <section class="destinos">     
+                    <article class="article-destinos" id="destinos">
+        
+                        <article id="cochabamba">
+                            <section class="slider">
+                                <section class="images">
+                                    <input type="radio" name="slide" id="img7">
+                                    <input type="radio" name="slide" id="img8">
+                                    <input type="radio" name="slide" id="img9">
+        
+                                    <img src="./components/img_bolivia/conventomuseosantateresacbba.jpg" class="m7" alt="convento museo santa teresa de cochabamba">
+                                    <img src="./components/img_bolivia/jardinbotanicocochala.jpg" class="m8" alt="jardin botanico de cochabamba">
+                                    <img src="./components/img_bolivia/cochala2.jpg" class="m9" alt="el cristo de la concordia y el teleferico">
+                                </section>
+                                <section class="dots">
+                                    <label for="img7"></label>
+                                    <label for="img8"></label>
+                                    <label for="img9"></label>
+                                </section>
+        
+                            </section>
+        
+                            <h3 class="title_card">Cochabamba</h3>
+                            <p class="text_card">Cochabamba es una ciudad del centro de Bolivia. Otros lugares que te ofrecemos para visitar: la enorme estatua del Cristo de la Concordia con vista al área circundante. En el centro de la ciudad está la Plaza 14 de Septiembre, una plaza colonial rodeada de galerías y la catedral barroca andina de San Sebastián. Tambien está el Convento Museo Santa Teresa, es una de las construcciones más antiguas que existen en Cochabamba-Bolivia de estilo barroco carmelitano construido por la Orden de Carmelitas Descalzas en 1760. El Jardín Botánico Martín Cárdenas de aproximadamente dos hectáreas de extensión, tiene la finalidad de contribuir a la conservación de los recursos vegetales de la región, realizando investigaciones científicas y enseñando a través de sus instalaciones sobre áreas de botánica y medio ambiente.</p>
+                            
+                            <a href="../index.html#form" class="card_cta">Contáctanos</a>
+                        </article>
+        
+                    </article>
+                </section>
+            </section> 
+        </section>
+    </main>
+
+    <footer id="footer">
+        <section>
+            <nav>
+                <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            </nav>
+        </section>
+        <section id="copyright_section">
+            <p>&copy; TRAVEL 360</p>
+        </section> 
+    </footer>
+    <script src="./components/js/sideBar.js"></script>
+</body>
+</html>

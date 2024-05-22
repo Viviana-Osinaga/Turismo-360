@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/sideBar.css">
+    <link rel="stylesheet" href="./styles/cards.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/query.css">
+    <link rel="stylesheet" href="./weather/style.css">
+
+    <link rel="icon" type="image/svg" href="./img/logo/logo_draw.svg">
+    <title>TRAVEL 360</title>
+
+</head>
+
+<body>
+
+    <!-- Sidebar-Header -->
+    <section class="sidebar close">
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-search-alt-2'></i>
+                    <input type="text" name="Busqueda" id="busqueda" placeholder="Búsqueda">
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Búsqueda</a></li>
+                </ul>
+            </li>
+            <li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-home'></i>
+                    <span class="link_name">Principal</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Principal</a></li>
+                </ul>
+            </li>
+            <li>
+                <section class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-plane-alt'></i>
+                        <span class="link_name">Destinos</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </section>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#destinos">Destinos</a></li>
+                    <li><a href="./argentina/argentina.html">Argentina</a></li>
+                    <li><a href="./bolivia/bolivia.html">Bolivia</a></li>
+                    <li><a href="./colombia/colombia.html">Colombia</a></li>
+                    <li><a href="./peru/peru.html">Perú</a></li>
+                </ul>
+            </li>
+            <li>
+                <section class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-envelope'></i>
+                        <span class="link_name">Contacto</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </section>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Contacto</a></li>
+                    <li><a href="#form">Formulario</a></li>
+                    <li><a href="#footer_redes_sociales">Vías de comunicación</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <!--Mostrar/Ocultar menú-->
+    <article class="home-section">
+        <section class="home-content">
+            <i class='bx bxs-chevrons-left'></i>
+        </section>
+        <!-- Fin Sidebar-Header -->
+        <main>
+            <img src="./img/logo/logo__White.png" alt="" id="logo_home">
+            <!--Destinos dentro del pais-->
+            <section id="destinos">
+                <section id="articulos-destino-flex">
+                    <article class="articulos">
+                        <a title="Argentina" href="./argentina/argentina.html"><img src="./img/img_home/BArgentina.jpg"
+                                alt="Argentina" class="imagen">
+                            <p class="p-destinos">Argentina</p>
+                        </a>
+                    </article>
+                    <article class="articulos">
+                        <a title="Bolivia" href="./bolivia/bolivia.html"><img src="./img/img_home/BBolivia.jpg" alt="Bolivia" class="imagen">
+                            <p class="p-destinos">Bolivia</p>
+                        </a>
+                    </article>
+                    <article class="articulos">
+                        <a title="Colombia" href="./colombia/colombia.html"><img src="./img/img_home/BColombia.jpg" alt="Colombia"
+                                class="imagen">
+                            <p class="p-destinos">Colombia</p>
+                        </a>
+                    </article>
+                    <article class="articulos">
+                        <a title="Perú" href="./peru/peru.html"><img src="./img/img_home/BPeru.jpg" alt="Perú"
+                                class="imagen">
+                            <p class="p-destinos">Perú</p>
+                        </a>
+                    </article>
+                </section>
+            </section>
+            <!-- Fin Destinos dentro del pais-->
+            <!--Sección Somos Travel-->
+            <section id="secciones">
+                <section id="descrip-pais-flex">
+                    <section id="img-descrip-pais">
+                        <p></p>
+                    </section>
+                    <section id="tex-descrip-pais-flex">
+                        <section class="somos_info">
+                            <h2>Somos Travel 360</h2>
+                            <p>¡Bienvenido a nuestra agencia de viajes! Somos un equipo de expertos en turismo
+                                que nos apasiona ayudar a nuestros clientes a planificar las mejores vacaciones
+                                de sus vidas. Ofrecemos una amplia variedad de destinos y paquetes turísticos
+                                diseñados para satisfacer todas las necesidades y presupuestos. Nos enorgullece
+                                brindar un servicio excepcional y personalizado a cada uno de nuestros clientes.
+                            </p>
+                            <p>¡Permítenos ser tu guía en tu próxima aventura!</p>
+                            <p></p>
+                        </section>
+                        <a href="#form" class="card_cta">Contáctanos</a>
+                    </section>
+                </section>
+                <!--Fin Sección Somos Travel-->
+                <!--Sección Clima-->
+                <section class="clima">
+                    <h2 class="titulo_clima">¿Deseas revisar el clima de tu próximo destino?</h2>
+                    <article class="card_weather">
+                        <article class="search">
+                            <input type="text" placeholder="Ingresa el nombre de la ciudad" spellcheck="false">
+                            <button class="boton_search" ><i class='bx bx-search-alt-2'></i></button>
+                        </article>
+                        <article class="error">
+                            <p class="errorMsg">Ciudad no encontrada. ¡Intenta de nuevo!</p>
+                        </article>
+                        <article class="weather">
+                            <img src="./weather/images/rain.png" class="weather-icon">
+                            <h1 class="temp">22°c</h1>
+                            <h2 class="city">Medellin</h2>
+                            <article class="details">
+                                <article class="col">
+                                    <img src="./weather/images/humidity.png" alt="">
+                                    <article>
+                                        <p class="humidity">50%</p>
+                                        <p>Humedad</p>
+                                    </article>
+                                </article>
+                                <article class="col">
+                                    <img src="./weather/images/wind.png" alt="">
+                                    <article>
+                                        <p class="wind">15 km/h</p>
+                                        <p>Velocidad del viento</p>
+                                    </article>
+                                </article>
+                            </article>
+                        </article>
+                
+                    </article>
+                </section>
+
+                <!--Fin Clima-->
+                <!-- Formulario -->
+                <section id="form">
+                    <h2>Contáctanos</h2>
+                    <form id="miForm" action="Link" method="post">
+                        <fieldset>
+                            <legend>Deseas más información?</legend>
+                            <label class="form_letter" for="fname">Nombre</label>
+                            <input class="entrada" type="text" name="fname" id="fname" maxlength="20">
+                            <p id="msgNombre"></p>
+
+                            <label class="form_letter" for="lname">Apellido</label>
+                            <input class="entrada" type="text" name="lname" id="lname" maxlength="30">
+                            <p id="msgApellido"></p>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Datos de contacto</legend>
+
+                            <label class="form_letter" for="telefono">Teléfono</label>
+                            <input class="entrada" type="number" name="telefono" id="telefono">
+                            <p id="msgTelefono"></p>
+
+                            <label class="form_letter" for="email">E-mail&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input class="entrada" type="email" name="email" id="email">
+                            <p id="msgMail"></p>
+                            
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Selecciona el destino de tu preferencia</legend>
+                            <select class="entrada" name="paquete" id="paquete">
+                                <option value="0">Elegir</option>
+                                <option value="1">Argentina</option>
+                                <option value="2">Bolivia</option>
+                                <option value="3">Colombia</option>
+                                <option value="4">Perú</option>
+                            </select>
+                            <p id="msgDestino"></p>
+                        </fieldset>
+
+                        <fieldset class="asunto">
+                            <legend>Mensaje</legend>
+                            <textarea class="entrada" name="mensaje" id="mensaje" cols="30" rows="3" placeholder="Mensaje..."></textarea>
+                            <p id="msgConsulta"></p>
+                            <p id="msgEnviado"></p>
+                        </fieldset>
+                        <section id="botonesform">
+                            <button id="enviar" class="btn-form" type="submit" onclick="validarForm()">Enviar</button>
+                            <button class="btn-form" type="reset">Borrar</button>
+                        </section>
+                    </form>
+                </section>
+                <!-- Fin Formulario -->
+                <!--Contacto-Iframe-->
+                <section class="contacto">
+                    <section class="datos-contacto">
+                        <h2 id="info_contacto">TRAVEL 360</h2>
+                        <p class="contacto_p">consultas@travel360.com</p>
+                        <p class="contacto_p">Diagonal 74 número 914, La Plata. Buenos Aires. Argentina </p>
+                        <p class="contacto_p">54 221 452-5689</p> 
+                    </section>
+                    <section id="iframe">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.026056849068!2d-57.9553632!3d-34.9057956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e64951002b8b%3A0xcdfbb61b72de6824!2sDiag.%2074%20914%2C%20La%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1684094117904!5m2!1ses-419!2sar"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+                </section>
+                <!--Fin de Contacto-Iframe-->
+                <!--Footer-->
+                <footer id="footer_redes_sociales">
+                    <section>
+                        <nav>
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class='bx bxl-facebook-circle'></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                            <a href="https://twitter.com/?lang=es" target="_blank"><i class='bx bxl-twitter'></i></a>
+                            <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i
+                                    class='bx bxl-whatsapp'></i></a>
+                        </nav>
+                    </section>
+                    <section id="copyright_section">
+                        <p>&copy; TRAVEL 360</p>
+                    </section>
+                </footer>
+                <!--Fin footer-->
+        </main>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script src="./weather/script.js"></script>
+        <script src="./js/validarForm.js"></script>
+        <script src="./js/sideBar.js"></script>
+        <script src="./js/validacion.js"></script>
+        
+
+</body>
+
+</html>

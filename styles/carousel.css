@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Body */
+body{
+    background-image: url(../components/img_home/lago.jpg);
+}
+.carousel-inner{
+    margin: 5%;
+    background-color: #0b4f6c31;;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display:inline-block;
+    text-align: center;
+}
+.carousel-item{
+   
+    padding: 5rem;
+}

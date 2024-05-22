@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/paises.css">
+    <link rel="stylesheet" href="./styles/sideBar.css">
+    <link rel="stylesheet" href="./styles/cards.css">
+    <link rel="icon" type="image/svg" href="./components/logo/logo_draw.svg">
+    <title>Colombia</title>
+</head>
+<body>
+    <!-- Sidebar-Header -->
+    <header class="sidebar close">
+        <section>
+            <img src="./components/logo/logo_draw.svg" alt="logo de la empresa" id="logo">
+        </section>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-search-alt-2' ></i>
+                    <input type="text" name="Busqueda" id="busqueda" placeholder="Búsqueda">
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Búsqueda</a></li>
+                </ul>
+            </li>
+            <!-- <li> -->
+            <li>
+                <a href="../index.html">
+                    <i class='bx bxs-home'></i>
+                    <span class="link_name">Principal</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="../index.html">Principal</a></li>
+                </ul>
+            </li>
+            <li>
+                <section class="icon-link">
+                    <a href="#">
+                        <i class='bx bxs-plane-alt'></i>
+                        <span class="link_name">Destinos</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </section>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Destinos</a></li>
+                    <li><a href="../argentina/argentina.html">Argentina</a></li>
+                    <li><a href="../bolivia/bolivia.html">Bolivia</a></li>
+                    <li><a href="colombia.html">Colombia</a></li>
+                    <li><a href="../peru/peru.html">Perú</a></li>
+                </ul>
+            </li>
+            <li>
+                <section class="icon-link">
+                    <a href="/index.html">
+                        <i class='bx bxs-envelope' ></i>
+                        <span class="link_name">Contacto</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </section>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Contacto</a></li>
+                    <li><a href="#redes_sociales">Redes Sociales</a></li>
+                    <li><a href="../index.html#form">Formulario</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </header>
+    <!-- Body -->
+    <!--Mostrar/Ocultar menú-->
+    <main class="home-section"> <!--para el botón-->
+        <section>
+            <section class="home-content">
+                <i class='bx bxs-chevrons-left'></i>
+            </section>
+
+            <h1>Colombia</h1>
+
+            <!--Destinos dentro del pais-->
+
+            <section id="articulos-destino-flex">
+                <article class="articulos">
+                    <a title="Ciudad1" href="#medellin">
+                        <img src="./components/img_col/Medellin/ciruclopq.jpg" alt="foto de las ruinas del fuerte de samaipata" class="imagen">
+                        <p class="p-destinos">Medellín</p>
+                    </a>
+                </article>
+                <article class="articulos">
+                    <a title="Ciudad2" href="#cartagena">
+                        <img src="./components/img_col/Cartagena/cartagena-colombia.jpg" alt="foto de la praza 24 de septiempre" class="imagen">
+                        <p class="p-destinos">Cartagena</p>
+                    </a>
+                </article>
+                <article class="articulos">
+                    <a title="Ciudad3" href="#salento">
+                        <img src="./components/img_col/Salento/JEEP.png" alt="teleferico de de cochabamba" class="imagen">
+                        <p class="p-destinos">Salento</p>
+                    </a>
+                </article>
+            
+            </section>
+            <!--cards ciudades-->
+            <section class="destinos_section">
+                <section class="destinos">     
+                    <article class="article-destinos" id="destinos">
+        
+                        <article id="medellin">
+                            <section class="slider">
+                                <!-- Sería genial tener las imgs del mismo tamaño o altura en su defecto -->
+                                <section class="images"> 
+                                    <input type="radio" name="slide" id="img1">
+                                    <input type="radio" name="slide" id="img2">
+                                    <input type="radio" name="slide" id="img3">
+        
+                                    <img src="./components/img_col/Medellin/ciruclopq.jpg" class="m1" alt="Medellin de noche">
+                                    <img src="./components/img_col/Medellin/guatape.jpg" class="m2" alt="Guatape">
+                                    <img src="./components/img_col/Medellin/guatapecalle.jpg" class="m3" alt="Calle vieja Guatape">
+                                </section>
+                                <section class="dots">
+                                    <label for="img1"></label>
+                                    <label for="img2"></label>
+                                    <label for="img3"></label>
+                                </section>
+        
+                            </section>
+        
+                            <h3 class="title_card">Medellín</h3>
+                            <p class="text_card">Capital de la provincia montañosa de Antioquia en Colombia. Es apodada la "Ciudad de la eterna primavera" por su clima templado y alberga la famosa Feria de las Flores anual. El moderno Metrocable conecta la ciudad con los barrios circundantes y tiene vistas del Valle de Aburrá que se encuentra debajo. Las esculturas de Fernando Botero decoran la Plaza Botero en el centro de la ciudad, mientras que el Museo de Antioquia exhibe más obras del artista colombiano.</p>
+                            
+                            <a href="../index.html#form" class="card_cta">Contáctanos</a>
+                        </article>
+        
+                    </article>
+                </section>
+                <section class="destinos">     
+                    <article class="article-destinos" id="destinos">
+        
+                        <article id="cartagena">
+                            <section class="slider">
+                                <section class="images">
+                                    <input type="radio" name="slide" id="img4">
+                                    <input type="radio" name="slide" id="img5">
+                                    <input type="radio" name="slide" id="img6">
+        
+                                    <img src="./components/img_col/Cartagena/bocagrande.jpg" class="m4" alt="Medellin de noche">
+                                    <img src="./components/img_col/Cartagena/cartagena-de-indias.jpg" class="m5" alt="Guatape">
+                                    <img src="./components/img_col/Cartagena/hotelCartagena.jpg" class="m6" alt="Calle vieja Guatape">
+                                </section>
+                                <section class="dots">
+                                    <label for="img4"></label>
+                                    <label for="img5"></label>
+                                    <label for="img6"></label>
+                                </section>
+        
+                            </section>
+        
+                            <h3 class="title_card">Cartagena</h3>
+                            <p class="text_card">Ciudad portuaria en la costa caribeña de Colombia. Junto al mar, se encuentra la Ciudad Vieja amurallada, que se fundó en el siglo XVI, con plazas, calles de adoquines y edificios coloniales coloridos. Con un clima tropical, la ciudad también es un destino popular por sus playas. Se puede llegar en bote a la Isla de Barú, con playas de arena blanca y palmeras, y a las Islas del Rosario, famosas por sus arrecifes de coral.</p>
+                            
+                            <a href="../index.html#form" class="card_cta">Contáctanos</a>
+                        </article>
+        
+                    </article>
+                </section>
+                <section class="destinos">     
+                    <article class="article-destinos" id="destinos">
+        
+                        <article id="salento">
+                            <section class="slider">
+                                <section class="images">
+                                    <input type="radio" name="slide" id="img7">
+                                    <input type="radio" name="slide" id="img8">
+                                    <input type="radio" name="slide" id="img9">
+        
+                                    <img src="./components/img_col/Salento/pxfuel.com.jpg" class="m7" alt="convento museo santa teresa de cochabamba">
+                                    <img src="./components/img_col/Salento/salento-quindío.jpg" class="m8" alt="jardin botanico de cochabamba">
+                                    <img src="./components/img_col/Salento/wax-palms.jpg" class="m9" alt="el cristo de la concordia y el teleferico">
+                                </section>
+                                <section class="dots">
+                                    <label for="img7"></label>
+                                    <label for="img8"></label>
+                                    <label for="img9"></label>
+                                </section>
+        
+                            </section>
+        
+                            <h3 class="title_card">Salento</h3>
+                            <p class="text_card">Es una ciudad andina, al oeste de Bogotá. Es conocida por sus fincas cafeteras y la vegetación de su entorno. Al este se encuentra el Valle del Cocora, donde las palmas de cera, un símbolo nacional, albergan loros poco comunes. La ciudad es una vía de acceso a las cimas nevadas del Parque nacional natural Los Nevados, al noreste. En Salento, la Calle Real tiene edificios coloridos y tiendas de artesanías. El Mirador se encuentra justo al noreste de la ciudad.</p>
+                            
+                            <a href="../index.html#form" class="card_cta">Contáctanos</a>
+                        </article>
+        
+                    </article>
+                </section>
+            </section> 
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <nav id="redes_sociales">
+                <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            </nav>
+        </section>
+        <section id="copyright_section">
+            <p>&copy; TRAVEL 360</p>
+        </section> 
+    </footer>
+    <script src="./components/JS/sideBar.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles/argentina.css">
+    <link rel="stylesheet" href="./styles/sideBar.css">
+    <link rel="stylesheet" href="./styles/cards.css">
+    <link rel="icon" type="image/svg" href="./img/logo/logo_draw.svg">
+    <title>Argentina</title>
+</head>
+<body>
+    <main>
+        <!--Sidebar-->
+        <header class="sidebar close">
+            <section>
+                <img src="./img/logo/logo_draw.svg" alt="" id="logo">
+            </section>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">
+                        <i class='bx bx-search-alt-2'></i>
+                        <input type="text" name="Busqueda" id="busqueda" placeholder="Búsqueda">
+                    </a>
+                    <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Búsqueda</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../index.html">
+                        <i class='bx bxs-home'></i>
+                        <span class="link_name">Principal</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a class="link_name" href="../index.html">Principal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <section class="icon-link">
+                        <a href="#">
+                            <i class='bx bxs-plane-alt'></i>
+                            <span class="link_name">Destinos</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </section>
+                    <ul class="sub-menu">
+                        <li><a class="link_name" href="#destinos">Destinos</a></li>
+                        <li><a href="argentina.html">Argentina</a></li>
+                        <li><a href="../bolivia/bolivia.html">Bolivia</a></li>
+                        <li><a href="../colombia/colombia.html">Colombia</a></li>
+                        <li><a href="../peru/peru.html">Perú</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <section class="icon-link">
+                        <a href="#">
+                            <i class='bx bxs-envelope'></i>
+                            <span class="link_name">Contacto</span>
+                        </a>
+                        <i class='bx bxs-chevron-down arrow'></i>
+                    </section>
+                        <ul class="sub-menu">
+                            <li><a class="link_name" href="">Contacto</a></li>
+                            <li><a href="#footer_redes_sociales">Redes Sociales</a></li>
+                            <li><a href="../index.html#form">Formulario</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </header>
+
+        <!--País-->
+        <article class="home-section">
+            <section class="home-content">
+                <i class='bx bxs-chevrons-left'></i>
+            </section>
+            <h1>Argentina</h1>
+
+        <!--Destinos dentro del pais-->
+        <section id="destinos">
+            <section id="articulos-destino-flex">
+                <article class="articulos">
+                    <a title="Ciudad1" href="#bariloche"><img src="./img/img_argentina/bariloche.jpg"
+                                    alt="Bariloche" class="imagen">
+                        <p></p><p class="p-destinos">Bariloche</p>
+                    </a>
+                </article>
+                <article class="articulos">
+                    <a title="Ciudad2" href="#bsas"><img src="./img/img_argentina/buenosaires.jpg"
+                                    alt="Buenos Aires" class="imagen">
+                        <p class="p-destinos">Buenos Aires</p>
+                    </a>
+                </article>
+                <article class="articulos">
+                    <a title="Ciudad3" href="#iguazu"><img src="./img/img_argentina/iguazu.jpg"
+                                    alt="Puerto Iguazú" class="imagen">
+                        <p class="p-destinos">Puerto Iguazú</p>
+                    </a>
+                </article>
+            </section>
+        </section>
+
+        <!--Cards Ciudades-->
+        <section class="destinos_section">
+            <section class="destinos">
+                <article class="article-destinos" id="destinos">
+                    <article id="bariloche">
+                        <section class="slider">
+                            <section class="images">
+                                <input type="radio" name="slide" id="img1">
+                                <input type="radio" name="slide" id="img2">
+                                <input type="radio" name="slide" id="img3">
+
+                                <img src="./img/img_argentina/bariloche.jpg" class="m1"
+                                                alt="BarilochePaisaje">
+                                <img src="./img/img_argentina/bariloche2.jpg" class="m2"
+                                                alt="BarilocheNevada">
+                                <img src="./img/img_argentina/bariloche3.jpg" class="m3"
+                                                alt="BarilocheNavegable">
+                            </section>
+                            <section class="dots">
+                                <label for="img1"></label>
+                                <label for="img2"></label>
+                                <label for="img3"></label>
+                            </section>
+                        </section>
+                        <h3 class="title_card">Bariloche</h3>
+                        <p class="text_card">La ciudad está ubicada entre bosques milenarios, montañas
+                                        cubiertas de nieve y lagos cristalinos, en la provincia de Río Negro, dentro del
+                                        Parque Nacional Nahuel Huapi, junto a la cordillera de los Andes.</p>
+                        <p class="text_card">En el 2012 fue declarada capital nacional del turismo de
+                                        aventura, y en el 2015, capital nacional del chocolate.</p>
+                        <p class="text_card">Vení a disfrutar de Bariloche las cuatro estaciones del año.
+                                        Encontrarás una naturaleza que premia a cada visitante con paisajes maravillosos
+                                        y variedad de actividades para disfrutar: excursiones tradicionales, paseos
+                                        lacustres, nieve para todos los gustos, turismo joven, salidas románticas,
+                                        actividades familiares, aventura, tranquilidad y una agenda cultural diversa.
+                                    </p>
+                        <a href="../index.html#form" class="card_cta">Contáctanos</a>
+                    </article>
+                </article>
+            </section>
+
+            <section class="destinos">
+                <article class="article-destinos" id="destinos">
+                    <article id="bsas">
+                        <section class="slider">
+                            <section class="images">
+                                <input type="radio" name="slide" id="img4">
+                                <input type="radio" name="slide" id="img5">
+                                <input type="radio" name="slide" id="img6">
+
+                                <img src="./img/img_argentina/buenosaires.jpg" class="m4" alt="Obelisco">
+                                <img src="./img/img_argentina/buenosaires2.jpg" class="m5" alt="Planetario">
+                                <img src="./img/img_argentina/buenosaires3.jpg" class="m6"
+                                                alt="Puente de la Mujer">
+                        </section>
+                        <section class="dots">
+                            <label for="img4"></label>
+                            <label for="img5"></label>
+                            <label for="img6"></label>
+                        </section>
+                        </section>
+                        <h3 class="title_card">Buenos Aires</h3>
+                        <p class="text_card">Es la gran capital cosmopolita de Argentina que deslumbra con
+                                        su arquitectura y su vida urbana.</p>
+                        <p class="text_card">Su compleja infraestructura la convierte en una de las
+                                        metrópolis de mayor importancia de América. Es una ciudad global de categoría
+                                        alfa, dadas sus influencias en el comercio, finanzas, moda, arte, gastronomía,
+                                        educación, entretenimiento y cultura.</p>
+                        <p class="text_card">Su perfil urbano, marcadamente ecléctico, invita a todos a
+                                        recorrer sus atractivos. </p>
+                        <a href="../index.html#form" class="card_cta">Contáctanos</a>
+                    </article>
+                </article>
+            </section>
+
+            <section class="destinos">
+                <article class="article-destinos" id="destinos">
+                    <article id="iguazu">
+                        <section class="slider">
+                            <section class="images">
+                                <input type="radio" name="slide" id="img7">
+                                <input type="radio" name="slide" id="img8">
+                                <input type="radio" name="slide" id="img9">
+
+                                <img src="./img/img_argentina/iguazu.jpg" class="m7" alt="Cataratas">
+                                <img src="./img/img_argentina/iguazu2.jpg" class="m8" alt="Sendero Verde">
+                                <img src="./img/img_argentina/iguazu3.jpg" class="m9" alt="Río">
+                        </section>
+                        <section class="dots">
+                            <label for="img7"></label>
+                            <label for="img8"></label>
+                            <label for="img9"></label>
+                        </section>
+                        </section>
+                        <h3 class="title_card">Puerto Iguazú</h3>
+                        <p class="text_card">Un contexto vegetal inigualable enmarca a uno de los paisajes
+                                        naturales más opulentos del mundo en la provincia de Misiones, en el extremo
+                                        nordeste de Argentina.</p>
+                        <p class="text_card">Se encuentra situada a 14 kilómetros de las Cataratas del
+                                        Iguazú, una de las Siete Maravillas del Mundo, manifestación espectacular de uno
+                                        de los recursos cada vez más escasos del planeta: el agua.</p>
+                        <p class="text_card">La actividad turística es su principal motor económico, aunque
+                                        también se destaca el comercio internacional. Forma parte de la zona conocida
+                                        como la Triple Frontera, en donde contacta la soberanía argentina con la del
+                                        Brasil y con la del Paraguay.</p>
+                        <a href="../index.html#form" class="card_cta">Contáctanos</a>
+                    </article>
+                </article>
+            </section>
+        </section>
+
+        <!--Footer-->
+        <footer id="footer_redes_sociales">
+            <section>
+                <nav>
+                    <a href="https://www.facebook.com/" target="_blank"><i
+                                        class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                                        class='bx bxl-instagram'></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i
+                                        class='bx bxl-twitter'></i></a>
+                    <a href="https://www.whatsapp.com/?lang=es" target="_blank"><i
+                                        class='bx bxl-whatsapp'></i></a>
+                </nav>
+            </section>
+            <section id="copyright_section">
+                <p>&copy; TRAVEL 360</p>
+            </section>
+        </footer>
+    </main>
+    <script src="./js/sideBar.js"></script>
+</body>
+</html>

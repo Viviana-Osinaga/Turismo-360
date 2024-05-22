@@ -1,0 +1,167 @@
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 14rem;
+    margin-bottom: 5rem;
+}
+form {
+    width: 41rem;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* background-color:rgba(0, 0, 0, 0.8); */
+    box-shadow: 4px 4px 10px 2px #555;
+    border-radius: 20px;
+}
+
+form fieldset {
+    margin: 1rem;
+    padding: 1rem;
+    /* border: 1px solid rgb(240, 231, 246); */
+    color: rgb(240, 231, 246);
+    text-align: center;
+    border-radius: 20px;
+}
+
+textarea {
+    background-color: rgb(240, 231, 246);
+    /* margin: 5px; */
+    border-radius: 8px;
+    height: 70px;
+}
+select {
+    border-radius: 8px;
+}
+select:focus {
+    outline-style: none;
+}
+select:hover {
+    box-shadow: 4px 4px 10px 2px #0b4f6c;
+}
+select option {
+    border-radius: 8px;
+}
+.asunto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form fieldset legend{
+    font-size: 1.4rem;
+    font-family: 'Wix Madefor Display', sans-serif;
+    text-align: center;
+    padding: 2px 3px 3px;
+    color: #0b4f6c;
+}
+.form_letter{
+    color: #0b4f6c;
+}
+section form fieldset input {
+    background-color:rgb(240, 231, 246);
+    padding: 2px;
+    margin: 0.2rem 1rem;
+    /*color: rgb(240, 231, 246);*/
+    border-radius: 8px;
+    height: 31px;
+
+}
+input:focus {
+    outline-style: none;
+}
+textarea:focus {
+    outline-style: none;
+}
+textarea:hover {
+    box-shadow: 4px 4px 10px 2px #0b4f6c;
+}
+
+section form fieldset input:hover{
+    box-shadow: 4px 4px 10px 2px #0b4f6c;
+}
+
+.btn-form{
+	background-color: #0b4f6c;
+	color: #D5D8DC;
+	text-decoration: none;
+	padding: 1rem;
+	width: 200px;
+	text-align: center;
+	margin: 10px;
+	border-radius: 15px;
+	transition: background-color 0.5s ease-out;
+    font-size: 1rem;
+    border: 0;
+	font-family: 'Wix Madefor Display', sans-serif;
+}
+
+.btn-form:hover {
+	background-color:#23b5d3;
+	box-shadow: 0 0 6px #23b5d3;
+	color:#F7F7FF;
+}
+#botonesform{
+    text-align: center;
+}
+
+/* mobile */
+@media (max-width:700px) {
+    #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: -.5rem;
+        margin-bottom: -150px;
+
+    }
+    form {
+        width: 280px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+
+    }
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    input {
+        align-self: center;
+        justify-content: center;
+    }
+    input[type="radio"] {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-self: center;
+        text-align: left;
+    }
+    label {
+        align-self: center;
+        justify-content: center; 
+    }
+    .gener {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        flex-wrap: wrap;
+        margin: 1rem;
+        padding: 1rem;
+        float: left;
+        text-align: center;
+    }
+}
+@media screen and (367px <= width < 760px){
+    
+}
+

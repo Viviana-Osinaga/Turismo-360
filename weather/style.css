@@ -4,7 +4,12 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-
+.clima {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .card_weather{
     width: 90%;
     max-width: 470px;
@@ -12,7 +17,7 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: white;
-    margin: 100px auto 0;
+    margin: 10%;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
@@ -112,12 +117,16 @@
     /* margin-top: -1px; */
 }
 
-@media screen and (max-width:759px) {
+@media screen and (max-width:760px) {
+    .clima {
+        padding:5%;
+        margin: 0%;
+    }
 
     .titulo_clima {
         padding-left: -15px;
         font-size: 1.8rem;
-        margin-top: 200%;
+        margin-top: 0%;
         color:#fff;
         width: 90%;  
     }
@@ -129,9 +138,14 @@
         
     }
     .card_weather{
-        width: 80%;
-        margin-left: -1px;
-        padding: 20px 13.5px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+        /* margin-left: -1px;
+        padding: 20px 13.5px; */
     }
     .search button{
         padding: 5px;
@@ -157,19 +171,5 @@
     }
 
 }
-
-@media screen and (max-width:792){
-    .titulo_clima{
-        margin-top: 145%;
-    }
-    
-}
-@media screen and (max-width:1200px){
-    .clima{
-        margin-top: 35%;
-    }
-    
-}
-    
 
 

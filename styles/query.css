@@ -45,15 +45,20 @@
     #img-descrip-pais {
         display: none;
     }
-
+    #destinos {
+        margin-bottom: 1rem;
+    }
     #descrip-pais-flex {
-        padding: 10% 0 0 0;
+        padding: 1rem;
+        height: 100%;
     }
     #tex-descrip-pais-flex {
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        padding-right: 2rem;
-        width: 80%;
+        align-items: center;
+        /* padding: 1rem, 0rem, 2rem, 0rem; */
+        width: 100%;
     }
     #iframe{
         padding:0;
@@ -64,6 +69,12 @@
     }
     p{
         font-size: 0.5rem;
+    }
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .contacto_p{
         font-size: 10px;
@@ -121,12 +132,13 @@
     #tex-descrip-pais-flex {
         flex-direction: row;
         justify-content: center;
-        padding-right: 2rem;
+        width: 100%;
+        /* padding-right: 2rem; */
     }
     .contacto{
         display: flex;
         flex-direction:column;
-        padding-top: 20%;
+        padding: 0%;
         
     }
     .datos-contacto{   
@@ -204,7 +216,8 @@
     #tex-descrip-pais-flex {
         flex-direction: row;
         justify-content: center;
-        padding-right: 2rem;
+        padding-bottom: 10%;
+        /* padding-right: 2rem; */
     }
     .contacto{
         display: flex;

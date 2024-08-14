@@ -1,6 +1,6 @@
-
-const apiKey = "863242cfb2b1d357e6093d9a4df19a4b";
+const apiKey = "f0b0ed179d48a605641ac99d19e5d2ec";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+const difKelvin = 273.15
 
 const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
@@ -62,4 +62,3 @@ searchBox.addEventListener("keyup", (event) => {
     event.key == "Enter" ? checkWeather (searchBox.value): null; // Ternary Operator
 
 })
-

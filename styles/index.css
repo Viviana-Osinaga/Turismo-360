@@ -177,11 +177,10 @@ animation:tracking-in-expand-forward-top 0.4s linear both;
     font-size: 1.3rem;
 }
 .card_cta{
-	margin-left: 1em;
 	background-color: #0b4f6c;
 	color: #D5D8DC;
 	text-decoration: none;
-	padding: 1em 2em;
+	padding: 1rem 2rem;
 	width: 40%;
 	text-align: center;
 	margin: 10px;
@@ -247,7 +246,7 @@ iframe{
     padding: 1rem;
 }
 
-@media screen and (760px <= width < 1200px){
+@media (width < 1200px){
     #iframe {
         overflow: hidden;
         padding: 10%;
@@ -272,7 +271,7 @@ iframe{
     }
 }
 
-@media screen and (max-width:759px) {
+@media (max-width:759px) {
     #tex-descrip-pais-flex h2 {
         padding-left: 1rem;
         font-size: 2.5rem;
@@ -319,6 +318,12 @@ iframe{
         line-height: 1.5rem;
         margin-left: -25px;
         padding-left: 0;
+    }
+    .card_cta{
+        width: 50%;
+        min-width: max-content;
+        text-align: center;
+        font-size: 80%;
     }
 
 }

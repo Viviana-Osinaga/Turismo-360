@@ -60,21 +60,6 @@
 
 /* botones cards*/
 
-.card_cta{
-	margin-left: 1em;
-	background-color: #0b4f6c;
-	color: #D5D8DC;
-	text-decoration: none;
-	padding: 1em 2em;
-	width: 40%;
-	text-align: center;
-	margin: 10px;
-	border-radius: 15px;
-	transition: background-color 0.5s ease-out;
-    font-size: 120%;
-	
-}
-
 .card_cta:hover{
 	background-color:#23b5d3;
 	box-shadow: 0 0 6px #23b5d3;
@@ -140,12 +125,5 @@
 }
 #img3:checked ~ .m3{
     margin-left: -200%;
-}
-
-@media screen and (max-width:760px) {
-    .card_cta{
-        margin-left: 1rem;
-    }
-
 }
 
